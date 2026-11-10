@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descubra Tarrafal, na ilha de Santiago, Cabo Verde, com as suas belas praias, paisagens naturais, cultura e história." />
+    <meta name="author" content="Edson Monteiro" />
+
+    <title>Tarrafal Santiago</title>
+  </head>
+  <body>
+    <!-- Cidade com navegacao interna listas e tabela -->
+    <header>
+      <h1>
+        <i><strong>Tarrafal</strong></i>
+      </h1>
+      <img src="imagens/tarrafal.jpg" alt="Tarrafal" width="240" height="160" />
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://camaramunicipaltarrafal.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Onde Fica</a
+            >
+          </li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#visitar">O Que Visitar</a></li>
+          <li><a href="#ditado">Ditado</a></li>
+          <li><a href="#sugestoes">Sugestoes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!--Fica na ilha de santiago ao norte-->
+        <h2 id="onde-fica">Onde Fica</h2>
+
+        <p>
+          Fica na <span lang="en">Santiago Island</span> ao norte, situando-se a
+          cerca de 70 quilómetros da capital, Praia. O município abrange uma
+          área costeira deslumbrante em Cabo Verde, rodeada por montanhas
+          majestosas e um oceano azul-turquesa.
+        </p>
+      </section>
+      <section>
+        <!--lindas praias -->
+        <h2 id="historia">Pelo Que E Conhecida</h2>
+
+        <p>
+          Lindas praias de areia dourada e coqueiros que criam um cenário
+          paradisíaco único na ilha. Para além das suas águas calmas e
+          cristalinas, o Tarrafal é reconhecido pela sua rica cultura
+          piscatória, gastronomia de peixe fresco, música tradicional e pela sua
+          importância histórica marcante.
+        </p>
+      </section>
+      <!--RECOMENDAÇÕES MINHAS -->
+      <section>
+        <h2 id="visitar">O Que Eu Recomendo</h2>
+        <ul>
+          <li><strong>Hotel King Fisher</strong></li>
+          <li><strong>Cavernas underwater</strong></li>
+          <li><strong>Passeio de barco ao pôr do sol</strong></li>
+          <li>
+            <strong>Visita ao antigo Campo de Concentração do Tarrafal</strong>
+          </li>
+          <li>
+            <strong>Peixe grelhado fresco nos restaurantes à beira-mar</strong>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Principais monumentos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Monumento</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Campo de Concentração do Tarrafal</th>
+              <td>
+                O Campo de Concentração do Tarrafal, também conhecido como
+                "Campo de Concentração de Tarrafal", foi um centro de detenção
+                durante o período colonial.
+              </td>
+            </tr>
+            <tr>
+              <th>Igreja de Nossa Senhora da Luz</th>
+              <td>
+                A Igreja de Nossa Senhora da Luz é uma igreja católica
+                localizada no Tarrafal, conhecida por sua arquitetura colonial e
+                importância religiosa na comunidade local.
+              </td>
+            </tr>
+            <tr>
+              <th>Farol do Tarrafal</th>
+              <td>
+                O Farol do Tarrafal é um farol histórico situado na costa da
+                cidade, oferecendo vistas panorâmicas do oceano e servindo como
+                ponto de referência para os navegadores.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <br />
+      <article id="ditado">
+        <h3>Um Ditado sobre a minha cidade</h3>
+        <blockquote>
+          <p>
+            Tarrafal is a small town in the northern part of Santiago Island,
+            Cape Verde. It is known for its beautiful beaches and clear waters,
+            making it a popular destination for tourists seeking relaxation and
+            water activities. Its warm hospitality and vibrant atmosphere make
+            every visitor feel at home.
+          </p>
+        </blockquote>
+      </article>
+      <section id="sugestoes">
+        <h2>Partilhe uma sugestão sobre a cidade</h2>
+
+        <p>
+          <strong
+            >Se tiver alguma sugestão sobre a cidade, por favor, preencha o
+            formulário abaixo:</strong
+          >
+        </p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>A sua Identificacao</legend>
+            <!-- CORRIGIDO: for="nome" em vez de for="text" -->
+            <label for="nome" id="nomes">Digite seu nome: </label><br />
+            <input
+              type="text"
+              id="nome"
+              name="seunome"
+              placeholder="Digite seu nome"
+              required
+              minlength="3"
+              maxlength="60"
+            /><br /><br />
+            <label for="email" id="emails">Digite seu email: </label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Detalhes da recomendacao</legend>
+            <div>
+              <label for="rec" id="recomendacao">Recomendacao</label><br />
+              <select id="rec" name="rec" required>
+                <option value="">---Selecione Uma opcao---</option>
+                <option value="monu">Monumento</option>
+                <option value="natu">Miradouro/Natureza</option>
+                <option value="rest">Restaurante/Gastronomia</option>
+              </select>
+            </div>
+            <br />
+            <div>
+              
+              <span>Selecione sua nacionalidade</span><br />
+              <input type="radio" id="mor" name="nacionalidade" />
+              <label for="mor" id="morador">Nacional</label><br />
+              <input type="radio" id="tur" name="nacionalidade" />
+              <label for="tur" id="turista">Turista</label><br />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Sugestoes</legend>
+           
+            <label for="sug">Deixe aqui a sua sugestao</label><br/>
+            <textarea
+              id="sug"
+              name="sugestao"
+              cols="30"
+              rows="10"
+              minlength="20"
+              maxlength="800"
+              required
+            >
+            </textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Autorizacao para a publicacao</legend>
+            <div>
+              
+              <input type="checkbox" id="auto" name="autorizacao" />
+              <label for="auto"
+                >Autorizas a publicacao das suas escolhas?</label>
+            </div>
+          </fieldset>
+          <div>
+            <button type="submit">Enviar</button>__________
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <hr />
+        &copy;
+        <i><strong>All Rights Reserved, Edson Monteiro / 2026</strong></i>
+      </footer>
+    </main>
+  </body>
+</html>
