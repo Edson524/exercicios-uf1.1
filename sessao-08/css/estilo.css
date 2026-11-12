@@ -82,7 +82,8 @@ nav a
 }
 .sugestao
 {
-
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 input, textarea{
    background-color: #f2f4f7;
