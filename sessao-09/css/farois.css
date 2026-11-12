@@ -1,0 +1,296 @@
+
+/* Paleta de cores marítima e naval */
+:root {
+    --azul-escuro: #0f172a;
+    --azul-marinho: #1e3a8a;
+    --fundo-claro: #f1f5f9;
+    --branco: #ffffff;
+    --vermelho: #dc2626;
+    --dourado: #d4a017;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo-claro);
+    color: var(--azul-escuro);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    color: var(--azul-marinho);
+    font-size: 26px;
+}
+
+h3 {
+    color: var(--azul-escuro);
+    font-size: 21px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Ligações */
+a {
+    color: var(--azul-marinho);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--branco);
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: var(--branco);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--dourado);
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cartões */
+.cartao {
+    background-color: var(--branco);
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Curiosidades */
+.curiosidade {
+    background-color: #fef9e7;
+    border-left: 5px solid var(--dourado);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Avisos de segurança */
+.aviso {
+    background-color: #fee2e2;
+    border-left: 5px solid var(--vermelho);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Elementos em destaque */
+.destaque {
+    background-color: #fef9e7;
+    color: var(--azul-escuro);
+    border-left: 5px solid var(--dourado);
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--branco);
+}
+
+th {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--azul-marinho);
+}
+
+/* Secção de agendamento */
+#agendamento {
+    background-color: var(--branco);
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--azul-marinho);
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Botões */
+.botao {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efeito ao passar o rato */
+.botao:hover {
+    background-color: var(--dourado);
+    color: var(--azul-escuro);
+}
+
+/* Botão secundário */
+.botao-secundario {
+    background-color: #64748b;
+    color: var(--branco);
+}
+
+.botao-secundario:hover {
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adaptação a ecrãs pequenos */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #agendamento {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 6px;
+        overflow-wrap: anywhere;
+    }
+}
