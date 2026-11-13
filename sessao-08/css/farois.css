@@ -67,6 +67,7 @@ header {
     color: var(--branco);
     padding: 25px;
     text-align: center;
+    border-bottom: 6px solid #0f172a;
 }
 
 header h1 {
