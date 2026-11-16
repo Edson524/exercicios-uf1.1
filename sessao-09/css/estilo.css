@@ -1,91 +1,213 @@
-body
-{
-    font-family: system-ui, -apple-system, sans-serif;
+
+/*
+PALETA DE CORES — Cidade e Passadiços do Paiva
+
+Cor principal (links e botões): #2196f3
+Cor dos títulos: #0f172a
+Cor de realce (avisos): #ff9800
+
+Cores neutras:
+Texto principal: #334155
+Texto secundário: #64748b
+Bordas: #cbd5e1
+Fundo da página: #f8fafc
+Fundo dos cartões: #edf1f5
+*/
+
+/* ===== 1. BASE ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
     background-color: #f8fafc;
     color: #334155;
 }
-h1, h2, h3
-{
-    color: #0f172a;
+
+main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
-h2
-{
+
+/* ===== 2. TEXTO E FONTES ===== */
+
+h1, h2, h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #0f172a;
+    font-weight: 700;
+    margin: 24px 0 12px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
     border-bottom: 1px solid #cbd5e1;
 }
-table
-{
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    margin: 12px 0 16px;
+}
+
+a {
+    color: #2196f3;
+}
+
+small {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+/* ===== 3. CABEÇALHO, MENU E RODAPÉ ===== */
+
+header {
+    background-color: #e8f3fc;
+    padding: 24px 16px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 14px;
+    color: #2196f3;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #dbeafe;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #e8f3fc;
+    color: #64748b;
+    text-align: center;
+    padding: 20px 16px;
+    margin-top: 32px;
+}
+
+/* ===== 4. TABELAS E FORMULÁRIOS ===== */
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
-td, th
-{
-    border: 1px solid #000000;
+
+td, th {
+    border: 1px solid #cbd5e1;
     padding: 10px;
     background-color: #edf1f5;
 }
-th
-{
+
+th {
     background-color: #eff1f5;
+    font-weight: 700;
 }
-nav ul
-{
-    list-style: none;
+
+input, select, textarea {
+    font-family: inherit;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background-color: #f2f4f7;
+    max-width: 100%;
 }
-nav li
-{
-    display: inline-block;
+
+textarea {
+    width: 100%;
 }
-nav a
-{
-    color: black;
-    text-decoration: none;
-}
+
+/* ===== 5. CLASSES ===== */
+
 .botao {
+    display: inline-block;
     background-color: #2196f3;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 12px 20px;
+    padding: 0.75em 1.25em;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
+    font-family: inherit;
 }
-.cartao
-{
+
+.botao:hover {
+    background-color: #1565c0;
+}
+
+.cartao {
     background-color: #edf1f5;
-    border: 1px solid black;
+    border: 1px solid #cbd5e1;
     border-radius: 8px;
     padding: 16px 20px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
+
 .aviso {
-    background-color: #fff3e0;
+    background-color: hsl(36, 100%, 94%);
     border-left: 5px solid #ff9800;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
 }
+
 .curiosidade {
     background-color: #e8f5e9;
     border-left: 5px solid #4caf50;
     padding: 15px;
     margin: 10px 0;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
-.botao:hover {
-    background-color: #1565c0;
+
+.reserva {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
 }
-.reserva
-{
+
+.sugestao {
     background-color: #ffffff;
     border-radius: 10px;
+    padding: 16px;
 }
-.sugestao
-{
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-input, textarea{
-   background-color: #f2f4f7;
-   border-radius: 5px;
-}
+
+/* ===== 6. IDS ===== */
+
+/* Estilos específicos para IDs podem ser adicionados aqui. */
