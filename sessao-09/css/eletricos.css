@@ -1,0 +1,225 @@
+
+/*
+PALETA DE CORES — ELÉTRICOS DE LISBOA
+
+Amarelo principal: #facc15
+Quase preto: #1c1917
+Texto secundário: #57534e
+Bordas: #d6d3d1
+Vermelho dos avisos: #b91c1c
+Fundo da página: #fafaf9
+Fundo dos cartões: #ffffff
+*/
+
+/* ===== BASE ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1c1917;
+    background-color: #fafaf9;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+
+/* ===== TEXTO E FONTES ===== */
+
+h1, h2, h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #1c1917;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 16px 0 8px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-left: 6px solid #facc15;
+    padding-left: 12px;
+    margin: 32px 0 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 12px 0 16px;
+}
+
+/* ===== CABEÇALHO E MENU ===== */
+
+header {
+    background-color: #facc15;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 8px solid #1c1917;
+}
+
+header img {
+    background-color: white;
+    padding: 8px;
+    border: 2px solid #1c1917;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #57534e;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #1c1917;
+    color: #facc15;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #44403c;
+}
+
+/* ===== INTRODUÇÃO ===== */
+
+.introducao {
+    font-size: 1.1rem;
+    color: #57534e;
+    margin: 20px 0 30px;
+}
+
+/* ===== CARTÕES ===== */
+
+.cartao {
+    background-color: #ffffff;
+    border: 1px solid #d6d3d1;
+    border-top: 6px solid #facc15;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.numero-linha {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #facc15;
+    border: 2px solid #1c1917;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* ===== CURIOSIDADE ===== */
+
+.curiosidade {
+    background-color: rgb(255, 249, 219);
+    border-left: 5px solid #facc15;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* ===== TABELA ===== */
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-weight: 600;
+    padding: 10px;
+    color: #57534e;
+}
+
+th, td {
+    border: 1px solid #d6d3d1;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #facc15;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f4;
+}
+
+/* ===== AVISO ===== */
+
+.aviso {
+    background-color: hsl(0, 100%, 96%);
+    border: 2px dashed #b91c1c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.aviso ul {
+    padding-left: 24px;
+}
+
+.aviso li {
+    margin-bottom: 10px;
+}
+
+/* ===== RODAPÉ ===== */
+
+footer {
+    background-color: #1c1917;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #facc15;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
